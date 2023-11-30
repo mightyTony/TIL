@@ -3,6 +3,7 @@
 ## 2. 화살표 함수의 this는 자신이 선언된 함수(렉시컬) 범위에서 정의 
 
 ### 일반 함수안에 this 
+```javascript
 const user = {
     firstName: 'Heropy',
     lastName: 'Park',
@@ -13,8 +14,11 @@ const user = {
 }
 
 console.log(user.getFullName()) => Heropy Park
+```
+
 
 ### 화살표 함수의 this
+```javascript
 function user() {
     this.firstName = 'Neo'
     this.lastName = 'Anderson'
@@ -31,3 +35,4 @@ function user() {
 
 const u = user()
 console.log(u.getFullName) => Neo Anderson
+```
